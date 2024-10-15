@@ -61,11 +61,12 @@ describe('MainPage test', () => {
     it('should change products list when category is clicked', () => {
         const { queryByText, container } = render(<MainPage />);
         const categoriesContainer = container.querySelector('.categories');
+        expect(categoriesContainer).toBeInTheDocument();
         fireEvent.click(
             getByText(categoriesContainer as HTMLElement, 'Одежда')
         );
 
         expect(container.querySelectorAll('.product-card').length).toEqual(1);
-        expect(queryByText('Костюм гуся')).toBeInTheDocument;
+        expect(queryByText('Костюм гуся')).toBeInTheDocument();
     });
 });

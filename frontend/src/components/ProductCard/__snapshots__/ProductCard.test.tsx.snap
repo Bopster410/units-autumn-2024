@@ -38,6 +38,44 @@ exports[`ProductCard test should render correctly 1`] = `
 </DocumentFragment>
 `;
 
+exports[`ProductCard test should render correctly with fractional price 1`] = `
+<DocumentFragment>
+  <div
+    class="product-card"
+  >
+    <div
+      class="product-card__text"
+    >
+      <h2
+        class="product-card__name"
+      >
+        IPhone 14 Pro
+      </h2>
+      <div
+        class="product-card__description"
+      >
+        Latest iphone buy it now
+      </div>
+      <h1
+        class="product-card__price"
+      >
+        999,9 $
+      </h1>
+      <div
+        class="product-card__category"
+      >
+        Электроника
+      </div>
+    </div>
+    <img
+      alt="IPhone 14 Pro"
+      class="product-card__image"
+      src="/iphone.png"
+    />
+  </div>
+</DocumentFragment>
+`;
+
 exports[`ProductCard test should render correctly without imageUrl 1`] = `
 <DocumentFragment>
   <div
@@ -49,24 +87,100 @@ exports[`ProductCard test should render correctly without imageUrl 1`] = `
       <h2
         class="product-card__name"
       >
-        Костюм гуся
+        IPhone 14 Pro
       </h2>
       <div
         class="product-card__description"
       >
-        Запускаем гуся работяги
+        Latest iphone buy it now
       </div>
       <h1
         class="product-card__price"
       >
-        1 000 ₽
+        999 $
       </h1>
       <div
         class="product-card__category"
       >
-        Одежда
+        Электроника
       </div>
     </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`ProductCard test should render with "₽" priceSymbol 1`] = `
+<DocumentFragment>
+  <div
+    class="product-card"
+  >
+    <div
+      class="product-card__text"
+    >
+      <h2
+        class="product-card__name"
+      >
+        IPhone 14 Pro
+      </h2>
+      <div
+        class="product-card__description"
+      >
+        Latest iphone buy it now
+      </div>
+      <h1
+        class="product-card__price"
+      >
+        999 ₽
+      </h1>
+      <div
+        class="product-card__category"
+      >
+        Электроника
+      </div>
+    </div>
+    <img
+      alt="IPhone 14 Pro"
+      class="product-card__image"
+      src="/iphone.png"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`ProductCard test should render without priceSymbol 1`] = `
+<DocumentFragment>
+  <div
+    class="product-card"
+  >
+    <div
+      class="product-card__text"
+    >
+      <h2
+        class="product-card__name"
+      >
+        IPhone 14 Pro
+      </h2>
+      <div
+        class="product-card__description"
+      >
+        Latest iphone buy it now
+      </div>
+      <h1
+        class="product-card__price"
+      >
+        999 ₽
+      </h1>
+      <div
+        class="product-card__category"
+      >
+        Электроника
+      </div>
+    </div>
+    <img
+      alt="IPhone 14 Pro"
+      class="product-card__image"
+      src="/iphone.png"
+    />
   </div>
 </DocumentFragment>
 `;
